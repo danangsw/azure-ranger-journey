@@ -7,3 +7,4 @@ The journey of Azure Ranger.
 3. [Azure PowerShell](https://docs.microsoft.com/en-us/powershell/azure/overview?view=azps-1.2.0)
 4. [Azure PowerShell Tutorial](https://docs.microsoft.com/en-us/powershell/azure/azureps-vm-tutorial?view=azps-1.2.0)
 5. [Microsoft Azure PowerShell PowerShell Gallery in GitHub](https://github.com/Azure/azure-powershell)
+6. [Useful PowerShell Azure Connect CLI Options with Az Module](http://www.maxtblog.com/2018/12/useful-powershell-azure-connect-cli-options-with-az-module-version-1-0/)
