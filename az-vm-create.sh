@@ -1,6 +1,12 @@
 #Commands to create a username and generate a random password.
-USERNAME=azureuser
-PASSWORD=$(openssl rand -base64 32)
+  USERNAME=azureuser
+  PASSWORD=$(openssl rand -base64 32)
+
+#Get region list locations
+  az account list-locations
+
+#Get OS list images
+  az vm image list --all --output table
 
 #Create VM
   az vm create \  #Command to create VM in azure
