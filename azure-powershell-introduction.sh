@@ -82,3 +82,16 @@ https://docs.microsoft.com/en-us/powershell/azure/queries-azureps?view=azps-1.2.
 
 mstsc.exe /v <PUBLIC_IP_ADDRESS>
 
+#Cleanup
+$job = Remove-AzResourceGroup -Name TutorialResources -Force -AsJob
+
+$job
+
+#Output:
+#Id     Name            PSJobTypeName   State         HasMoreData     Location             Command
+#--     ----            -------------   -----         -----------     --------             -------
+#1      Long Running... AzureLongRun... Running       True            localhost            Remove-AzResource...
+
+#To wait until the deletion is complete, use the following command:
+Wait-Job -Id $job.Id
+
