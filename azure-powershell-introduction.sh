@@ -82,5 +82,3 @@ https://docs.microsoft.com/en-us/powershell/azure/queries-azureps?view=azps-1.2.
 
 mstsc.exe /v <PUBLIC_IP_ADDRESS>
 
-
-
