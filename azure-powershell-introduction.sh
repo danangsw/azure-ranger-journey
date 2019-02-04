@@ -62,3 +62,25 @@ $newVM1
 #ProvisioningState : Succeeded
 #StorageProfile    : {ImageReference, OsDisk, DataDisks}
 
+#Get VM information with queries
+$publicIp = Get-AzPublicIpAddress -Name tutorialPublicIp -ResourceGroupName TutorialResources
+
+$publicIp | Select-Object Name,IpAddress,@{label='FQDN';expression={$_.DnsSettings.Fqdn}}
+
+#Qurey output azure powershell:
+https://docs.microsoft.com/en-us/powershell/azure/queries-azureps?view=azps-1.2.0
+
+#Output:
+#Name             IpAddress           FQDN
+#----             ---------           ----
+#tutorialPublicIp <PUBLIC_IP_ADDRESS> tutorialvm1-8a0999.eastus.cloudapp.azure.com
+
+#Connect to the VM over Remote Desktop
+#Using user credentials when you create VM for the first time
+#You can reset or get the troubleshot when you cannot connect using RDP,
+#by follow this URL: https://docs.microsoft.com/en-us/powershell/azure/queries-azureps?view=azps-1.2.0
+
+mstsc.exe /v <PUBLIC_IP_ADDRESS>
+
+
+
