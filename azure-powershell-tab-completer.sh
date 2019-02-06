@@ -2,3 +2,5 @@
 #To best capture the functionality of the completers, Modify the key binding for “Tab” in the examples below to display all the possible values at once.
 #Simply run:
 Set-PSReadLineKeyHandler -Key Tab -Function Complete
+
+#Goto: https://azure.microsoft.com/en-us/blog/completers-in-azure-powershell/
