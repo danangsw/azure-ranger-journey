@@ -3,4 +3,7 @@
 #Simply run:
 Set-PSReadLineKeyHandler -Key Tab -Function Complete
 
-#Goto: https://azure.microsoft.com/en-us/blog/completers-in-azure-powershell/
+#Goto:
+$IE=new-object -com internetexplorer.application
+$IE.navigate2("https://azure.microsoft.com/en-us/blog/completers-in-azure-powershell/")
+$IE.visible=$true
